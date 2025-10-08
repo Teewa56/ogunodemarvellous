@@ -261,58 +261,28 @@ to connect!
 
   if (cmd === "mp install cv" || cmd === "download cv") {
     if (typeof window !== "undefined") {
-      const cvContent = `
-MARVELLOUS OGUNODE
-Software Engineer
-Email: ogunodemarvellous@gmail.com
-Phone: +234 8169358541, +234 8037453956
-
-SUMMARY
-Software Engineer passionate about building scalable, intelligent systems across web, mobile, and blockchain.
-
-EXPERIENCE
-- Founder, Avira_X Tech Academy (01/2025 - Present)
-- Blockchain Developer Intern, Web3Nova (03/2025 - 08/2025)
-- Full Stack Developer Intern, CodeAlpha (02/2025 - 08/2025)
-- Frontend Developer, BrainBench Technology (10/2024 - 01/2025)
-
-EDUCATION
-Federal University of Technology, Akure
-Bachelor of Science - Computer Science (Expected 2027)
-
-SKILLS
-Frontend: ReactJS, NextJS, CSS, Tailwind CSS
-Backend: NodeJS, ExpressJS, Python
-Database: MongoDB, PostgreSQL
-Blockchain: Solidity, Move, Clarity
-AI/ML: PyTorch, TensorFlow, scikit-learn
-DevOps: Docker, Vercel, AWS
-`
-      const blob = new Blob([cvContent], { type: "text/plain" })
-      const url = window.URL.createObjectURL(blob)
       const a = document.createElement("a")
-      a.href = url
-      a.download = "Marvellous_Ogunode_CV.txt"
+      a.href = "/cv.pdf" 
+      a.download = "Marvellous_Ogunode_CV.pdf"
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
-      window.URL.revokeObjectURL(url)
     }
 
     return {
       type: "download",
       content: `
-═════════════════
-DOWNLOADING CV...
-═════════════════
+      ═════════════════
+      DOWNLOADING CV...
+      ═════════════════
 
-[█████████████████████████] 100%
+      [█████████████████████████] 100%
 
-✓ CV downloaded successfully!
-  File: Marvellous_Ogunode_CV.txt
+      ✓ CV downloaded successfully!
+        File: Marvellous_Ogunode_CV.txt
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-`,
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+      `,
     }
   }
 

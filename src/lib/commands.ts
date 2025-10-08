@@ -6,42 +6,42 @@ export interface CommandOutput {
 const projects = [
   {
     name: "Starel AI",
-    description: "A RAG AI model for Nigerian universities",
+    description: "A RAG AI model for Nigerian universities. This model uses LLM to answer questions based on the university's past questions and syllabus. I built the backend and trained the model for this project and the data was gotten from futa students",
     tech: ["Python", "PyTorch", "HuggingFace", "NLP"],
   },
   {
     name: "TrustFlow",
-    description: "A website that allows users to monitor the state of transactions in real-time",
-    tech: ["React", "Node.js", "WebSocket", "MongoDB"],
+    description: "A website that allows users to monitor the state of bank transactions in real-time. It tackles the problem of trust in bank transactions",
+    tech: ["React", "Node.js", "WebSocket", "Django"],
   },
   {
     name: "SolarSync",
     description:
-      "A P2P energy trading app that allows users to easily trade energy and predicts energy output for producers",
-    tech: ["Next.js", "Machine Learning", "PostgreSQL", "Blockchain"],
+      "A P2P energy trading app that allows users to easily trade energy between themselves onchain. It predicts energy output for producers and allows users to buy and sell energy seamlessly",
+    tech: ["Expo", "PyTorch", "PostgreSQL", "Solidity", "FastAPI"],
   },
   {
     name: "Onchain_IP",
     description:
-      "A GitHub-like platform for researchers to gain full ownership and proof of their research work on the blockchain",
+      "A GitHub-like platform for researchers to enable them gain full ownership and proof for their research work on the blockchain",
     tech: ["Solidity", "React", "IPFS", "Ethereum"],
   },
   {
     name: "HairHelpAI",
-    description: "A computer vision AI model that allows females to easily predict hair loss earlier",
-    tech: ["Python", "Computer Vision", "TensorFlow", "scikit-learn"],
+    description: "A computer vision AI model that allows females to easily predict hair loss earlier. This project was built as a resultl of my observation of how female students on campus are slowly losing their hair due to stress and other factors",
+    tech: ["ReactJs", "Flask", "TensorFlow", "scikit-learn"],
   },
   {
     name: "UrbanPulse",
     description:
-      "An AI-powered GIS developed for Nasarawa state that allows users to commute easily. Uses ML to predict accidents in real-time based on data from cars and buses",
-    tech: ["Python", "Machine Learning", "GIS", "Real-time Analytics"],
+      "An AI-powered GIS developed for Nassarawa state, Nigeria that allows users to commute easily. Uses ML to predict accidents in real-time based on data from cars and buses",
+    tech: ["Python", "ReactJs", "NodeJs", "Google Maps API", "MongoDB"],
   },
 ]
 
 const skills = {
   Frontend: ["ReactJS", "NextJS", "CSS", "Tailwind CSS"],
-  Backend: ["NodeJS", "ExpressJS", "Python"],
+  Backend: ["NodeJS", "ExpressJS", "Python", "Django", "FastAPI", "Flask"],
   Database: ["MongoDB", "PostgreSQL"],
   Blockchain: ["Solidity", "Move", "Clarity"],
   "AI/ML": ["PyTorch", "TensorFlow", "scikit-learn", "Statistics"],

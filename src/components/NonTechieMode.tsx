@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ExternalLink, Mail, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowLeft, ArrowDown, ExternalLink, Mail, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 import { content } from "../data/content";
 
 interface NonTechieModeProps {
@@ -192,14 +192,14 @@ function ProjectCard({ project, index }: { project: typeof content.projects[0]; 
             <motion.h3 layout="position" className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                 {project.title}
             </motion.h3>
+            {project.achievements && project.achievements.length > 0 && ( 
+    <motion.p layout="position" className="text-xs text-blue-400 float-right">
+        <ArrowDown size={20} />
+    </motion.p>
+)}
             <motion.p layout="position" className="text-gray-600 text-sm mb-4">
                 {project.description}
             </motion.p>
-            {project.achievements && project.achievements.length > 0 && ( 
-    <motion.p layout="position" className="text-xs text-blue-400 sm:hidden">
-        check achievements
-    </motion.p>
-)}
             <AnimatePresence>
                 {isExpanded && project.achievements && project.achievements.length > 0 && (
                     <motion.div

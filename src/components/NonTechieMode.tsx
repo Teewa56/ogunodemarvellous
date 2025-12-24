@@ -196,12 +196,7 @@ function ProjectCard({ project, index }: { project: typeof content.projects[0]; 
                 {project.description}
             </motion.p>
             {project.achievements && project.achievements.length > 0 && ( 
-    <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
-        className="text-xs text-blue-400 sm:hidden"
-    >
+    <motion.p className="text-xs text-blue-400 sm:hidden">
         check achievements
     </motion.p>
 )}

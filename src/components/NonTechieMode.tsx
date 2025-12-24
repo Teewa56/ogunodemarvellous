@@ -195,8 +195,8 @@ function ProjectCard({ project, index }: { project: typeof content.projects[0]; 
             <motion.p layout="position" className="text-gray-600 text-sm mb-4">
                 {project.description}
             </motion.p>
-            {project.achievements > 0 && ( 
-                <p className="cursor-pointer text-xs text-blue-400">see achievements</p>
+            {project.achievements && project.achievements.length > 0 && ( 
+                 <p className="text-xs text-blue-400 sm:hidden">tap to see achievements</p>
             )}
             <AnimatePresence>
                 {isExpanded && project.achievements && project.achievements.length > 0 && (

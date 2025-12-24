@@ -51,10 +51,20 @@ export default function NonTechieMode({ onBack }: NonTechieModeProps) {
                             </div>
                         </div>
 
-                        <div className="flex gap-4 mt-6">
-                            <a href="http://www.linkedin.com/in/ogunode-marvellous-77062a306/" className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"><Linkedin size={20} /></a>
-                            <a href="http://www.x.com/segunm35" className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"><Twitter size={20} /></a>
-                            <a href="http://www.github.com/teewa56" className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"><Github size={20} /></a>
+                        <div className="flex flex-wrap gap-4 mt-6">
+                            <a 
+                                href="/MARVELLOUS OGUNODE-CV.pdf" 
+                                download="Marvellous_Ogunode_CV.pdf"
+                                className="px-6 py-2.5 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition-colors flex items-center gap-2"
+                            >
+                                <ArrowLeft className="rotate-[-90deg]" size={18} />
+                                Download CV
+                            </a>
+                            <div className="flex items-center gap-2">
+                                <a href="http://www.linkedin.com/in/ogunode-marvellous-77062a306/" className="p-2.5 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"><Linkedin size={20} /></a>
+                                <a href="http://www.x.com/segunm35" className="p-2.5 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"><Twitter size={20} /></a>
+                                <a href="http://www.github.com/teewa56" className="p-2.5 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"><Github size={20} /></a>
+                            </div>
                         </div>
                     </motion.div>
                 </section>

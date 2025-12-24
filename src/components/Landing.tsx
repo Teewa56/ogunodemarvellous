@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Terminal, User, Sparkles, Code2 } from "lucide-react";
+import BlockchainBackground from "./BlockchainBackground";
 
 interface LandingProps {
     onSelectMode: (mode: "techie" | "non-techie") => void;
@@ -9,10 +10,7 @@ export default function Landing({ onSelectMode }: LandingProps) {
     return (
         <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4 overflow-hidden relative">
             {/* Background Ambience */}
-            <div className="absolute inset-0 z-0">
-                <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-purple-900/30 rounded-full blur-[100px]" />
-                <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-900/30 rounded-full blur-[100px]" />
-            </div>
+            <BlockchainBackground />
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
